@@ -1,0 +1,16 @@
+# slime  (variable `wt` in game.source.html)  24x9
+# 2 frames laid out left to right, each 12x9
+# palette (letter -> colour); any other character is transparent
+#   p = #a58ee8
+#   w = #efeddc
+#   n = #29243b
+
+....pppp................
+..pppppppp......pppp....
+.pppppppppp...pppppppp..
+pppwppppwppp.pppppppppp.
+pppnnppnnppppppwppppwppp
+pppppppppppppppnnppnnppp
+pppwwnnwwppppppppppppppp
+pppppppppppppppwwnnwwppp
+.pppppppppp..pppppppppp.

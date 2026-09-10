@@ -1,0 +1,18 @@
+# foe-b  (variable `dt` in game.source.html)  11x11
+# palette (letter -> colour); any other character is transparent
+#   c = #e8b7d6
+#   p = #915d9f
+#   w = #faf1d4
+#   n = #301f4c
+
+.....c.....
+....ccc....
+...cpppc...
+..cpppppc..
+.cppwnwppc.
+..ppwnwpp..
+...ppppp...
+..pppcppp..
+.ppcccccpp.
+ppp..c..ppp
+.....c.....

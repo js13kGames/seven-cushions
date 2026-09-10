@@ -1,0 +1,5 @@
+node_modules/
+pixel-*.png
+game.before-*.html
+index.before-*.html
+index.original.html

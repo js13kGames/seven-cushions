@@ -1,0 +1,2 @@
+const{chromium}=require('playwright');(async()=>{const b=await chromium.launch({headless:true,channel:'msedge'}),p=await b.newPage();await p.goto('file:///C:/Users/admin/Downloads/SEVEN_CUSHIONS_js13k_SUBMIT%20(1)/index.html');console.log(await p.locator('input').evaluate(e=>({appearance:getComputedStyle(e).appearance,thumbWidth:getComputedStyle(e,'::-webkit-slider-thumb').width})));await p.locator('input').fill('25');console.log(await p.locator('input').inputValue());await b.close()})()
+

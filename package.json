@@ -1,0 +1,14 @@
+{
+  "name": "seven-cushions",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SEVEN CUSHIONS - js13kgames 2026 entry",
+  "scripts": {
+    "build": "node build.cjs && node pack.cjs && node zip.cjs"
+  },
+  "devDependencies": {
+    "clean-css": "5.3.3",
+    "roadroller": "2.1.0",
+    "terser": "5.51.2"
+  }
+}

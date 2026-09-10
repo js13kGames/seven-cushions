@@ -1,0 +1,18 @@
+# foe-a  (variable `et` in game.source.html)  12x11
+# palette (letter -> colour); any other character is transparent
+#   d = #2c435b
+#   g = #c9c58f
+#   c = #84dccc
+#   n = #172536
+
+.g........g.
+.gg......gg.
+..dddddddd..
+.ddggggggdd.
+dddccccccddd
+ddddnccndddd
+.dddccccddd.
+..ddccccdd..
+.ddggggggdd.
+ddggddddggdd
+.ddd....ddd.
