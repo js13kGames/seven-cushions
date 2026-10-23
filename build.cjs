@@ -15,5 +15,11 @@ const fs = require('fs'), terser = require('terser'), CleanCSS = require('clean-
   html = html.replace(/<style>([\s\S]*?)<\/style>/,
     (_, css) => '<style>' + new CleanCSS({ level: 2 }).minify(css).styles + '</style>');
 
+  // js13k's host pulls inline data: URIs out into assets/ files, taking everything
+  // up to the next whitespace as the URI. Unpadded, `url(data:...)}*{...}body,html{`
+  // ran on to `font:16px`, so the body/html rules were cut away and the url( left
+  // unclosed. Spaces inside url( ) are valid CSS and end the URI exactly where it ends.
+  html = html.replace(/url\((data:[^)\s]+)\)/g, (_, uri) => 'url( ' + uri + ' )');
+
   fs.writeFileSync('index.html', html);
 })().catch(e => { console.error(e); process.exit(1); });
